@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Group Stacked Bar Chart</title>
+    <script type="text/javascript" src="protovis.js"></script>
+    <script type="text/javascript" src="headcount.js"></script>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+        function crearMapa(headcount){
+            var df = pv.Format.date("%y");
+            headcount.forEach(function(d) { d["anio"] = df.parse(d["anio"]); });
+
+            /* Extract the unique dates, departments and types. */
+            var dates = pv.uniq(headcount, function(d) d["anio"]),
+                depts = pv.uniq(headcount, function(d) d.dept),
+                types = pv.uniq(headcount, function(d) d.type);
+
+            /* Build a map of headcounts by date > dept > type. */
+            var count = pv.nest(headcount)
+                .key(function(d) d["anio"])
+                .key(function(d) d.dept)
+                .key(function(d) d.type)
+                .rollup(function(v) v[0].headcount);
+
+            /* Compute the maximum stack height using sum(types | date + dept). */
+            var max = pv.max(dates,
+                function(q) pv.max(depts,
+                function(d) pv.sum(types,
+                function(t) count[q][d][t])));
+
+            var w = 1024,
+                h = 500,
+                x1 = pv.Scale.ordinal(dates).splitBanded(0, w, .8),
+                x2 = pv.Scale.ordinal(depts).splitBanded(0, x1.range().band, .9),
+                y = pv.Scale.linear(0, max).range(0, h);
+
+            var vis = new pv.Panel()
+                .width(w)
+                .height(h)
+                .bottom(20)
+                .left(25)
+                .right(5)
+                .top(5);
+
+            var bar = vis.add(pv.Panel)
+                .data(dates)
+                .left(x1)
+              .add(pv.Layout.Stack)
+                .layers(types)
+                .values(depts)
+                .x(x2)
+                .y(function(d, t, q) y(count[q][d][t]))
+              .layer.add(pv.Bar)
+                .width(x2.range().band)
+                .title(function(d, t, q) d + ": " + count[q][d][t])
+                .fillStyle(pv.Colors.category20().by(function(d, t) d + t));
+
+            vis.add(pv.Label)
+                .data(dates)
+                .bottom(0)
+                .left(function(d) x1(d) + x1.range().band / 2)
+                .textMargin(5)
+                .textBaseline("top")
+                .textAlign("center")
+                .text(pv.Format.date("%m/%y"));
+
+            vis.add(pv.Rule)
+                .data(y.ticks())
+                .bottom(y)
+                .strokeStyle(function(d) d ? "rgba(255, 255, 255, .3)" : "#000")
+              .add(pv.Rule)
+                .left(0)
+                .width(15)
+                .strokeStyle("#000")
+              .anchor("left").add(pv.Label)
+                .text(y.tickFormat);
+            vis.render();
+        }
+    </script>
+    <select class="estados">
+        <option onclick="crearMapa(headcount32);">Nacional</option>
+        <option onclick="crearMapa(headcount1);">Aguascalientes</option>
+        <option onclick="crearMapa(headcount2);">Baja California</option>
+        <option onclick="crearMapa(headcount3);">Baja California Sur</option>
+        <option onclick="crearMapa(headcount4);">Campeche</option>
+        <option onclick="crearMapa(headcount5);">Colima</option>
+        <option onclick="crearMapa(headcount6);">Chiapas</option>
+        <option onclick="crearMapa(headcount7);">Chihuahua</option>
+        <option onclick="crearMapa(headcount8);">Distrito Federal</option>
+        <option onclick="crearMapa(headcount9);">Durango</option>
+        <option onclick="crearMapa(headcount10);">Guanajuato</option>
+        <option onclick="crearMapa(headcount11);">Guerrero</option>
+        <option onclick="crearMapa(headcount12);">Hidalgo</option>
+        <option onclick="crearMapa(headcount13);">Jalisco</option>
+        <option onclick="crearMapa(headcount14);">México</option>
+        <option onclick="crearMapa(headcount15);">Michoacán</option>
+        <option onclick="crearMapa(headcount16);">Morelos</option>
+        <option onclick="crearMapa(headcount17);">Nayarit</option>
+        <option onclick="crearMapa(headcount18);">Nuevo León</option>
+        <option onclick="crearMapa(headcount19);">Oaxaca</option>
+        <option onclick="crearMapa(headcount20);">Puebla</option>
+        <option onclick="crearMapa(headcount21);">Querétaro</option>
+        <option onclick="crearMapa(headcount22);">Quintana Roo</option>
+        <option onclick="crearMapa(headcount23);">San Luis Potosí</option>
+        <option onclick="crearMapa(headcount24);">Sinaloa</option>
+        <option onclick="crearMapa(headcount25);">Sonora</option>
+        <option onclick="crearMapa(headcount26);">Tabasco</option>
+        <option onclick="crearMapa(headcount27);">Tamaulipas</option>
+        <option onclick="crearMapa(headcount28);">Tlaxcala</option>
+        <option onclick="crearMapa(headcount29);">Veracruz</option>
+        <option onclick="crearMapa(headcount30);">Yucatán</option>
+        <option onclick="crearMapa(headcount31);">Zacatecas</option>
+    </select>
+
+
+
+  </body>
+</html>

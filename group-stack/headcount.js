@@ -1,0 +1,63 @@
+var headcount1 = [{'anio': '2000', headcount: '0', dept: 'Aguascalientes'}, {'anio': '2006', headcount: '2', dept: 'Aguascalientes'}, {'anio': '2007', headcount: '0', dept: 'Aguascalientes'}, {'anio': '2004', headcount: '1', dept: 'Aguascalientes'}, {'anio': '2005', headcount: '0', dept: 'Aguascalientes'}, {'anio': '2008', headcount: '5', dept: 'Aguascalientes'}, {'anio': '2009', headcount: '4', dept: 'Aguascalientes'}]; 
+
+var headcount2 = [{'anio': '2000', headcount: '8', dept: 'Baja California'}, {'anio': '2006', headcount: '10', dept: 'Baja California'}, {'anio': '2007', headcount: '14', dept: 'Baja California'}, {'anio': '2004', headcount: '15', dept: 'Baja California'}, {'anio': '2005', headcount: '8', dept: 'Baja California'}, {'anio': '2008', headcount: '41', dept: 'Baja California'}, {'anio': '2009', headcount: '30', dept: 'Baja California'}];
+
+var headcount3 = [{'anio': '2000', headcount: '0', dept: 'Baja California Sur'}, {'anio': '2006', headcount: '1', dept: 'Baja California Sur'}, {'anio': '2007', headcount: '2', dept: 'Baja California Sur'}, {'anio': '2004', headcount: '1', dept: 'Baja California Sur'}, {'anio': '2005', headcount: '0', dept: 'Baja California Sur'}, {'anio': '2008', headcount: '0', dept: 'Baja California Sur'}, {'anio': '2009', headcount: '3', dept: 'Baja California Sur'}];
+
+var headcount4 = [{'anio': '2000', headcount: '3', dept: 'Campeche'}, {'anio': '2006', headcount: '0', dept: 'Campeche'}, {'anio': '2007', headcount: '0', dept: 'Campeche'}, {'anio': '2004', headcount: '1', dept: 'Campeche'}, {'anio': '2005', headcount: '0', dept: 'Campeche'}, {'anio': '2008', headcount: '3', dept: 'Campeche'}, {'anio': '2009', headcount: '2', dept: 'Campeche'}];
+
+var headcount5 = [{'anio': '2000', headcount: '5', dept: 'Colima'}, {'anio': '2006', headcount: '0', dept: 'Colima'}, {'anio': '2007', headcount: '1', dept: 'Colima'}, {'anio': '2004', headcount: '1', dept: 'Colima'}, {'anio': '2005', headcount: '1', dept: 'Colima'}, {'anio': '2008', headcount: '2', dept: 'Colima'}, {'anio': '2009', headcount: '1', dept: 'Colima'}];
+
+var headcount6 = [{'anio': '2000', headcount: '15', dept: 'Chiapas'}, {'anio': '2006', headcount: '31', dept: 'Chiapas'}, {'anio': '2007', headcount: '4', dept: 'Chiapas'}, {'anio': '2004', headcount: '14', dept: 'Chiapas'}, {'anio': '2005', headcount: '12', dept: 'Chiapas'}, {'anio': '2008', headcount: '11', dept: 'Chiapas'}, {'anio': '2009', headcount: '14', dept: 'Chiapas'}];
+
+var headcount7 = [{'anio': '2000', headcount: '39', dept: 'Chihuahua'}, {'anio': '2006', headcount: '27', dept: 'Chihuahua'}, {'anio': '2007', headcount: '24', dept: 'Chihuahua'}, {'anio': '2004', headcount: '40', dept: 'Chihuahua'}, {'anio': '2005', headcount: '29', dept: 'Chihuahua'}, {'anio': '2008', headcount: '86', dept: 'Chihuahua'}, {'anio': '2009', headcount: '144', dept: 'Chihuahua'}]
+
+var headcount8 = [{'anio': '2000', headcount: '41', dept: 'Distrito Federal'}, {'anio': '2006', headcount: '29', dept: 'Distrito Federal'}, {'anio': '2007', headcount: '48', dept: 'Distrito Federal'}, {'anio': '2004', headcount: '50', dept: 'Distrito Federal'}, {'anio': '2005', headcount: '35', dept: 'Distrito Federal'}, {'anio': '2008', headcount: '36', dept: 'Distrito Federal'}, {'anio': '2009', headcount: '31', dept: 'Distrito Federal'}];
+
+var headcount9 =[{'anio': '2000', headcount: '1', dept: 'Durango'}, {'anio': '2006', headcount: '5', dept: 'Durango'}, {'anio': '2007', headcount: '7', dept: 'Durango'}, {'anio': '2004', headcount: '11', dept: 'Durango'}, {'anio': '2005', headcount: '5', dept: 'Durango'}, {'anio': '2008', headcount: '14', dept: 'Durango'}, {'anio': '2009', headcount: '40', dept: 'Durango'}];
+
+var headcount10 = [{'anio': '2000', headcount: '16', dept: 'Guanajuato'}, {'anio': '2006', headcount: '8', dept: 'Guanajuato'}, {'anio': '2007', headcount: '11', dept: 'Guanajuato'}, {'anio': '2004', headcount: '9', dept: 'Guanajuato'}, {'anio': '2005', headcount: '7', dept: 'Guanajuato'}, {'anio': '2008', headcount: '9', dept: 'Guanajuato'}, {'anio': '2009', headcount: '35', dept: 'Guanajuato'}];
+
+var headcount11 = [{'anio': '2000', headcount: '12', dept: 'Guerrero'}, {'anio': '2006', headcount: '32', dept: 'Guerrero'}, {'anio': '2007', headcount: '18', dept: 'Guerrero'}, {'anio': '2004', headcount: '6', dept: 'Guerrero'}, {'anio': '2005', headcount: '18', dept: 'Guerrero'}, {'anio': '2008', headcount: '18', dept: 'Guerrero'}, {'anio': '2009', headcount: '45', dept: 'Guerrero'}];
+
+var headcount12 = [{'anio': '2000', headcount: '3', dept: 'Hidalgo'}, {'anio': '2006', headcount: '0', dept: 'Hidalgo'}, {'anio': '2007', headcount: '2', dept: 'Hidalgo'}, {'anio': '2004', headcount: '3', dept: 'Hidalgo'}, {'anio': '2005', headcount: '0', dept: 'Hidalgo'}, {'anio': '2008', headcount: '3', dept: 'Hidalgo'}, {'anio': '2009', headcount: '6', dept: 'Hidalgo'}];
+
+var headcount13 = [{'anio': '2000', headcount: '11', dept: 'Jalisco'}, {'anio': '2006', headcount: '15', dept: 'Jalisco'}, {'anio': '2007', headcount: '19', dept: 'Jalisco'}, {'anio': '2004', headcount: '12', dept: 'Jalisco'}, {'anio': '2005', headcount: '10', dept: 'Jalisco'}, {'anio': '2008', headcount: '20', dept: 'Jalisco'}, {'anio': '2009', headcount: '25', dept: 'Jalisco'}];
+
+var headcount14 = [{'anio': '2000', headcount: '113', dept: 'México'}, {'anio': '2006', headcount: '86', dept: 'México'}, {'anio': '2007', headcount: '53', dept: 'México'}, {'anio': '2004', headcount: '87', dept: 'México'}, {'anio': '2005', headcount: '102', dept: 'México'}, {'anio': '2008', headcount: '69', dept: 'México'}, {'anio': '2009', headcount: '69', dept: 'México'}];
+
+var headcount15 =[{'anio': '2000', headcount: '21', dept: 'Michoacán'}, {'anio': '2006', headcount: '40', dept: 'Michoacán'}, {'anio': '2007', headcount: '29', dept: 'Michoacán'}, {'anio': '2004', headcount: '16', dept: 'Michoacán'}, {'anio': '2005', headcount: '24', dept: 'Michoacán'}, {'anio': '2008', headcount: '17', dept: 'Michoacán'}, {'anio': '2009', headcount: '21', dept: 'Michoacán'}];
+
+var headcount16 = [{'anio': '2000', headcount: '10', dept: 'Morelos'}, {'anio': '2006', headcount: '6', dept: 'Morelos'}, {'anio': '2007', headcount: '8', dept: 'Morelos'}, {'anio': '2004', headcount: '6', dept: 'Morelos'}, {'anio': '2005', headcount: '3', dept: 'Morelos'}, {'anio': '2008', headcount: '10', dept: 'Morelos'}, {'anio': '2009', headcount: '5', dept: 'Morelos'}];
+
+var headcount17 = [{'anio': '2000', headcount: '7', dept: 'Nayarit'}, {'anio': '2006', headcount: '2', dept: 'Nayarit'}, {'anio': '2007', headcount: '0', dept: 'Nayarit'}, {'anio': '2004', headcount: '5', dept: 'Nayarit'}, {'anio': '2005', headcount: '2', dept: 'Nayarit'}, {'anio': '2008', headcount: '7', dept: 'Nayarit'}, {'anio': '2009', headcount: '6', dept: 'Nayarit'}];
+
+var headcount18 = [{'anio': '2000', headcount: '5', dept: 'Nuevo León'}, {'anio': '2006', headcount: '6', dept: 'Nuevo León'}, {'anio': '2007', headcount: '13', dept: 'Nuevo León'}, {'anio': '2004', headcount: '4', dept: 'Nuevo León'}, {'anio': '2005', headcount: '7', dept: 'Nuevo León'}, {'anio': '2008', headcount: '8', dept: 'Nuevo León'}, {'anio': '2009', headcount: '10', dept: 'Nuevo León'}];
+
+var headcount19 = [{'anio': '2000', headcount: '24', dept: 'Oaxaca'}, {'anio': '2006', headcount: '21', dept: 'Oaxaca'}, {'anio': '2007', headcount: '17', dept: 'Oaxaca'}, {'anio': '2004', headcount: '21', dept: 'Oaxaca'}, {'anio': '2005', headcount: '12', dept: 'Oaxaca'}, {'anio': '2008', headcount: '24', dept: 'Oaxaca'}, {'anio': '2009', headcount: '22', dept: 'Oaxaca'}];
+
+var headcount20 = [{'anio': '2000', headcount: '14', dept: 'Puebla'}, {'anio': '2006', headcount: '11', dept: 'Puebla'}, {'anio': '2007', headcount: '14', dept: 'Puebla'}, {'anio': '2004', headcount: '16', dept: 'Puebla'}, {'anio': '2005', headcount: '13', dept: 'Puebla'}, {'anio': '2008', headcount: '17', dept: 'Puebla'}, {'anio': '2009', headcount: '11', dept: 'Puebla'}];
+
+var headcount21 = [{'anio': '2000', headcount: '1', dept: 'Querétaro'}, {'anio': '2006', headcount: '4', dept: 'Querétaro'}, {'anio': '2007', headcount: '3', dept: 'Querétaro'}, {'anio': '2004', headcount: '2', dept: 'Querétaro'}, {'anio': '2005', headcount: '4', dept: 'Querétaro'}, {'anio': '2008', headcount: '6', dept: 'Querétaro'}, {'anio': '2009', headcount: '9', dept: 'Querétaro'}];
+
+var headcount22 = [{'anio': '2000', headcount: '0', dept: 'Quintana Roo'}, {'anio': '2006', headcount: '3', dept: 'Quintana Roo'}, {'anio': '2007', headcount: '3', dept: 'Quintana Roo'}, {'anio': '2004', headcount: '4', dept: 'Quintana Roo'}, {'anio': '2005', headcount: '3', dept: 'Quintana Roo'}, {'anio': '2008', headcount: '3', dept: 'Quintana Roo'}, {'anio': '2009', headcount: '2', dept: 'Quintana Roo'}];
+
+var headcount23 = [{'anio': '2000', headcount: '15', dept: 'San Luis Potosí'}, {'anio': '2006', headcount: '10', dept: 'San Luis Potosí'}, {'anio': '2007', headcount: '9', dept: 'San Luis Potosí'}, {'anio': '2004', headcount: '14', dept: 'San Luis Potosí'}, {'anio': '2005', headcount: '5', dept: 'San Luis Potosí'}, {'anio': '2008', headcount: '12', dept: 'San Luis Potosí'}, {'anio': '2009', headcount: '13', dept: 'San Luis Potosí'}];
+
+var headcount24 = [{'anio': '2000', headcount: '20', dept: 'Sinaloa'}, {'anio': '2006', headcount: '6', dept: 'Sinaloa'}, {'anio': '2007', headcount: '6', dept: 'Sinaloa'}, {'anio': '2004', headcount: '10', dept: 'Sinaloa'}, {'anio': '2005', headcount: '12', dept: 'Sinaloa'}, {'anio': '2008', headcount: '27', dept: 'Sinaloa'}, {'anio': '2009', headcount: '58', dept: 'Sinaloa'}];
+
+var headcount25 = [{'anio': '2000', headcount: '7', dept: 'Sonora'}, {'anio': '2006', headcount: '6', dept: 'Sonora'}, {'anio': '2007', headcount: '2', dept: 'Sonora'}, {'anio': '2004', headcount: '5', dept: 'Sonora'}, {'anio': '2005', headcount: '9', dept: 'Sonora'}, {'anio': '2008', headcount: '15', dept: 'Sonora'}, {'anio': '2009', headcount: '14', dept: 'Sonora'}];
+
+var headcount26 = [{'anio': '2000', headcount: '4', dept: 'Tabasco'}, {'anio': '2006', headcount: '5', dept: 'Tabasco'}, {'anio': '2007', headcount: '5', dept: 'Tabasco'}, {'anio': '2004', headcount: '2', dept: 'Tabasco'}, {'anio': '2005', headcount: '3', dept: 'Tabasco'}, {'anio': '2008', headcount: '5', dept: 'Tabasco'}, {'anio': '2009', headcount: '5', dept: 'Tabasco'}];
+
+var headcount27 = [{'anio': '2000', headcount: '11', dept: 'Tamaulipas'}, {'anio': '2006', headcount: '23', dept: 'Tamaulipas'}, {'anio': '2007', headcount: '3', dept: 'Tamaulipas'}, {'anio': '2004', headcount: '9', dept: 'Tamaulipas'}, {'anio': '2005', headcount: '9', dept: 'Tamaulipas'}, {'anio': '2008', headcount: '5', dept: 'Tamaulipas'}, {'anio': '2009', headcount: '3', dept: 'Tamaulipas'}];
+
+var headcount28 = [{'anio': '2000', headcount: '3', dept: 'Tlaxcala'}, {'anio': '2006', headcount: '4', dept: 'Tlaxcala'}, {'anio': '2007', headcount: '1', dept: 'Tlaxcala'}, {'anio': '2004', headcount: '2', dept: 'Tlaxcala'}, {'anio': '2005', headcount: '2', dept: 'Tlaxcala'}, {'anio': '2008', headcount: '2', dept: 'Tlaxcala'}, {'anio': '2009', headcount: '2', dept: 'Tlaxcala'}];
+
+var headcount29 = [{'anio': '2000', headcount: '19', dept: 'Veracruz'}, {'anio': '2006', headcount: '8', dept: 'Veracruz'}, {'anio': '2007', headcount: '8', dept: 'Veracruz'}, {'anio': '2004', headcount: '9', dept: 'Veracruz'}, {'anio': '2005', headcount: '13', dept: 'Veracruz'}, {'anio': '2008', headcount: '14', dept: 'Veracruz'}, {'anio': '2009', headcount: '22', dept: 'Veracruz'}];
+
+var headcount30 = [{'anio': '2000', headcount: '2', dept: 'Yucatán'}, {'anio': '2006', headcount: '1', dept: 'Yucatán'}, {'anio': '2007', headcount: '2', dept: 'Yucatán'}, {'anio': '2004', headcount: '1', dept: 'Yucatán'}, {'anio': '2005', headcount: '2', dept: 'Yucatán'}, {'anio': '2008', headcount: '3', dept: 'Yucatán'}, {'anio': '2009', headcount: '2', dept: 'Yucatán'}];
+
+var headcount31 = [{'anio': '2000', headcount: '2', dept: 'Zacatecas'}, {'anio': '2006', headcount: '3', dept: 'Zacatecas'}, {'anio': '2007', headcount: '5', dept: 'Zacatecas'}, {'anio': '2004', headcount: '4', dept: 'Zacatecas'}, {'anio': '2005', headcount: '2', dept: 'Zacatecas'}, {'anio': '2008', headcount: '4', dept: 'Zacatecas'}, {'anio': '2009', headcount: '10', dept: 'Zacatecas'}];
+
+var headcount32 = [{'anio': '2000', headcount: '441', dept: 'Nacional'}, {'anio': '2006', headcount: '410', dept: 'Nacional'}, {'anio': '2007', headcount: '339', dept: 'Nacional'}, {'anio': '2004', headcount: '390', dept: 'Nacional'}, {'anio': '2005', headcount: '355', dept: 'Nacional'}, {'anio': '2008', headcount: '507', dept: 'Nacional'}, {'anio': '2009', headcount: '677', dept: 'Nacional'}];
