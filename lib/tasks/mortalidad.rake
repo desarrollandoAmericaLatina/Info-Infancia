@@ -20,7 +20,7 @@ namespace :load do
       end
       location.total = dates_total
 
-      row[8..-1].each_with_index do |element, index|
+      row[8..14].each_with_index do |element, index|
         dates_rate[dates[index]] = element
       end
       location.rate = dates_rate
